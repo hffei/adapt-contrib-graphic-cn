@@ -1,0 +1,1 @@
+# adapt-contrib-graphic-cn
