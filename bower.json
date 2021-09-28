@@ -1,0 +1,21 @@
+{
+  "name": "adapt-contrib-graphic",
+  "version": "5.0.0cn",
+  "framework": ">=5.14.0",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-graphic",
+  "bugs": "https://github.com/adaptlearning/adapt-contrib-graphic/issues",
+  "component" : "graphic",
+  "targetAttribute": "_graphic",
+  "displayName" : "图像",
+  "description": "图像组件，根据设备宽度动态显示不同分辨率的大小图像",
+  "main": "/js/adapt-contrib-graphic.js",
+  "assetFields" : [
+    "_graphic.small",
+    "_graphic.large"
+  ],
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPL-3.0"
+}

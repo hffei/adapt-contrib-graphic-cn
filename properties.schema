@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties": {
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "title": "说明",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "",
+      "translatable": true
+    },
+    "_graphic": {
+      "type": "object",
+      "required": true,
+      "title": "图像",
+      "properties": {
+        "alt": {
+          "type": "string",
+          "required": false,
+          "default": "",
+          "title": "提示文本",
+          "inputType": "Text",
+          "validators": [],
+          "help": "用于图像的描述",
+          "translatable": true
+        },
+        "large": {
+          "title": "大图",
+          "type": "string",
+          "required": true,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "The large sized image for desktop devices"
+        },
+        "small": {
+          "title": "小图",
+          "type": "string",
+          "required": true,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "The small sized image for mobile devices"
+        },
+        "attribution": {
+          "title": "属性",
+          "type": "string",
+          "required": false,
+          "default": "",
+          "inputType": "Text",
+          "validators": [],
+          "help": "用于描述属性的文本",
+          "translatable": true
+        }
+      }
+    }
+  }
+}
